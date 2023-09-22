@@ -1,26 +1,60 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import Test from './components/Test'
-
-const confirm = () => {
-  console.log('confirm')
-}
-</script>
-
 <template>
-  <HelloWorld msg="Vite + Vue" />
-  <Test>
-    <template #default>slot default</template>
-    <template #title>
-      <h3>slot title</h3>
-    </template>
-  </Test>
+  <div class="mb-10">
+    <FButton>Default</FButton>
+    <FButton type="primary">Primary</FButton>
+    <FButton type="success">Success</FButton>
+    <FButton type="info">Info</FButton>
+    <FButton type="warning">Warning</FButton>
+    <FButton type="danger">Danger</FButton>
+  </div>
 
-  <FButton type="primary">primary</FButton>
-  <FButton type="secondary" @click="confirm">secondary</FButton>
-  <FButton type="text">text</FButton>
+  <div class="mb-10">
+    <FButton round>Default</FButton>
+    <FButton type="primary" round>Primary</FButton>
+    <FButton type="success" round>Success</FButton>
+    <FButton type="info" round>Info</FButton>
+    <FButton type="warning" round>Warning</FButton>
+    <FButton type="danger" round>Danger</FButton>
+  </div>
 
-  <FButton size="large">large</FButton>
-  <FButton size="medium" disabled @click="confirm">medium</FButton>
-  <FButton size="small">small</FButton>
+  <div class="mb-10">
+    <FButton disabled>Default</FButton>
+    <FButton type="primary" disabled>Primary</FButton>
+    <FButton type="success" disabled>Success</FButton>
+    <FButton type="info" disabled>Info</FButton>
+    <FButton type="warning" disabled>Warning</FButton>
+    <FButton type="danger" disabled>Danger</FButton>
+  </div>
+
+  <div class="mb-10">
+    <FButton round disabled>Default</FButton>
+    <FButton type="primary" round disabled>Primary</FButton>
+    <FButton type="success" round disabled>Success</FButton>
+    <FButton type="info" round disabled>Info</FButton>
+    <FButton type="warning" round disabled>Warning</FButton>
+    <FButton type="danger" round disabled>Danger</FButton>
+  </div>
+
+  <div class="mb-10">
+    <FButton size="large">Large</FButton>
+    <FButton size="default">Default</FButton>
+    <FButton size="small">Small</FButton>
+  </div>
+
+  <div class="mb-10">
+    <FButton size="large" round>Large</FButton>
+    <FButton size="default" round>Default</FButton>
+    <FButton size="small" round>Small</FButton>
+  </div>
+
+  <div class="mb-10">
+    <FButton type="primary" loading>Loading</FButton>
+    <FButton type="primary" round loading>Loading</FButton>
+  </div>
 </template>
+
+<style scoped>
+.mb-10 {
+  margin-bottom: 10px;
+}
+</style>

@@ -7,3 +7,28 @@
   @include button-variant(button-config.$size);
   @include button-variant(button-config.$pseudo, true);
 }
+
+.s-btn-loading{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 8px;
+  border-color: #fff #fff #fff transparent;
+  border-style: solid;
+  border-width: 2px;
+  animation: btn-animation 1s infinite linear;
+}
+
+@keyframes btn-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-round{
+  border-radius: 20px;
+}

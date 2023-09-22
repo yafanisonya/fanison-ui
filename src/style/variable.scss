@@ -1,28 +1,53 @@
 // 变量
 // 定义主题变量
 $s-border-radius: var(--s-border-radius, 2px); //一般圆角
-$s-font-size-sm: var(--s-font-size-md, 10px); //当组件size为''时使用此字号大小
-$s-font-size-md: var(--s-font-size-md, 12px); //当组件size为''时使用此字号大小
-$s-font-size-lg: var(--s-font-size-md, 14px); //当组件size为''时使用此字号大小
+$s-font-size-sm: var(--s-font-size-sm, 12px); 
+$s-font-size-base: var(--s-font-size-md, 14px); 
+$s-font-size-lg: var(--s-font-size-lg, 16px); 
+
 $s-animation-duration-slow: var(--s-animation-duration-slow, 300ms);
 $s-animation-ease-in-out-smooth: var(
   --s-animation-ease-in-out-smooth,
   cubic-bezier(0.645, 0.045, 0.355, 1)
 );
-$s-light-text: var(--s-light-text, #ffffff); // 有色深色背景下字体颜色（固定）
-$s-primary: var(--s-primary, #5e7ce0); // 主要按钮，同品牌色
-$s-primary-hover: var(--s-primary-hover, #7693f5); // 主要按钮悬停
-$s-primary-active: var(--s-primary-active, #344899); // 主要按钮激活
-$s-primary-disabled: var(--s-primary-disabled, #879ada); // 主要按钮，同品牌色
-$s-text: var(--s-text, #252b3a); // 正文文本
-$s-disabled-text: var(--s-disabled-text, #8891a7); // 正文文本
-$s-disabled-bg: var(--s-disabled-bg, #c2cce5); // 正文文本
-$s-disabled-line: var(--s-disabled-line, #a9b0c0); // 正文文本
-$s-block: var(
-  --s-block,
-  #ffffff
-); // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
-$s-line: var(--s-line, #adb0b8); // 边框分割线，仅用于边框
+
+$s-text: var(--s-text, #606266);
+$s-block: var(--s-block,#ffffff); 
+$s-line: var(--s-line, #dcdfe6);
+$s-disabled-text: var(--s-disabled-text, #a8abb2); 
+$s-disabled-bg: var(--s-disabled-bg, #ffffff); 
+$s-disabled-line: var(--s-disabled-line, #e4e7ed);
+$s-hover-text: var(--s-hover-text, #409eff); 
+$s-hover-bg: var(--s-hover-bg, #ecf5ff); 
+$s-hover-line: var(--s-hover-line, #c6e2ff);
+$s-active-line: var(--s-active-line, #409eff);
+
+$s-light-text: var(--s-light-text, #ffffff);
+$s-primary: var(--s-primary, #409eff);
+$s-primary-hover: var(--s-primary-hover, #79bbff); 
+$s-primary-active: var(--s-primary-active, #337ecc); 
+$s-primary-disabled: var(--s-primary-disabled, #a0cfff); 
+
+$s-success: var(--s-primary, #67c23a);
+$s-success-hover: var(--s-primary-hover, #95d475); 
+$s-success-active: var(--s-primary-active, #529b2e); 
+$s-success-disabled: var(--s-primary-disabled, #b3e19d); 
+
+$s-info: var(--s-info, #909399);
+$s-info-hover: var(--s-info-hover, #b1b3b8); 
+$s-info-active: var(--s-info-active, #73767a); 
+$s-info-disabled: var(--s-info-disabled, #c8c9cc); 
+
+$s-warning: var(--s-warning, #e6a23c);
+$s-warning-hover: var(--s-warning-hover, #eebe77); 
+$s-warning-active: var(--s-warning-active, #b88230); 
+$s-warning-disabled: var(--s-warning-disabled, #f3d19e); 
+
+$s-danger: var(--s-danger, #f56c6c);
+$s-danger-hover: var(--s-danger-hover, #f89898); 
+$s-danger-active: var(--s-danger-active, #c45656); 
+$s-danger-disabled: var(--s-danger-disabled, #fab6b6); 
+
 $s-form-control-line-active: var(
   --s-form-control-line-active,
   #5e7ce0

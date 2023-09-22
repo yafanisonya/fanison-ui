@@ -1,18 +1,33 @@
 import { ExtractPropTypes, PropType } from 'vue'
 
-export type IButtonType = 'primary' | 'secondary' | 'text'
-export type IButtonSize = 'large' | 'medium' | 'small'
+export type IButtonType =
+  | 'default'
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
+
+export type IButtonSize = 'large' | 'default' | 'small'
 
 export const buttonProps = {
   type: {
     type: String as PropType<IButtonType>,
-    default: 'secondary'
+    default: 'default'
   },
   size: {
     type: String as PropType<IButtonSize>,
-    default: 'medium'
+    default: 'default'
   },
   disabled: {
+    type: Boolean,
+    default: false
+  },
+  round: {
+    type: Boolean,
+    default: false
+  },
+  loading: {
     type: Boolean,
     default: false
   }

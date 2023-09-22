@@ -5,7 +5,7 @@
   @apply inline-flex items-center justify-center;
   // 元素
   @apply border-[1px] border-solid border-transparent
-  h-[28px] py-0 px-[20px]
+  h-[32px] py-[8px] px-[15px]
   bg-transparent;
   border-radius: $s-border-radius;
 
@@ -14,7 +14,7 @@
      cursor-pointer;
 
   // 文字样式
-  font-size: $s-font-size-md;
+  font-size: $s-font-size-base;
 
   // 其他样式
   transition: background-color $s-animation-duration-slow
