@@ -15,6 +15,7 @@
     "build:components": "node ./scripts/build.js"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.5.3",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "vue": "^3.3.4"
   },
