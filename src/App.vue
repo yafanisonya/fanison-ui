@@ -1,4 +1,5 @@
 <template>
+  <!-- <h1>Button</h1>
   <div class="mb-10">
     <FButton>Default</FButton>
     <FButton type="primary">Primary</FButton>
@@ -50,7 +51,15 @@
   <div class="mb-10">
     <FButton type="primary" loading>Loading</FButton>
     <FButton type="primary" round loading>Loading</FButton>
-  </div>
+  </div> -->
+
+  <h1>Pagination</h1>
+
+  <FPagination :total="1" :hide-on-single-page="true" />
+  <FPagination :total="11" />
+  <FPagination :total="50" :current-page="2" />
+  <FPagination :total="80" :current-page="4" />
+  <FPagination :total="90" :current-page="5" />
 </template>
 
 <style scoped>

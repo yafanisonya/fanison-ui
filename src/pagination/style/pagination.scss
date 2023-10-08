@@ -1,0 +1,39 @@
+.s-pagination{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.s-pager{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    min-width: 32px;
+    height: 32px;
+    line-height:32px;
+    color: #303133;
+    background: #ffffff;
+    padding: 0 4px;
+    border: none;
+    border-radius:2px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box
+  }
+
+  li.current{
+    color:#409eff;
+    cursor: default;
+    font-weight:700;
+  }
+
+  li:hover{
+    color:#409eff;
+  }
+}

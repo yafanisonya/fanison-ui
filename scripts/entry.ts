@@ -1,9 +1,10 @@
 import type { App } from 'vue'
 import ButtonPlugin, { Button } from '../src/button'
+import PaginationPlugin, { Pagination } from '../src/pagination'
 
-export { Button }
+export { Button, Pagination }
 
-const installs = [ButtonPlugin]
+const installs = [ButtonPlugin, PaginationPlugin]
 
 export default {
   install(app: App): void {
