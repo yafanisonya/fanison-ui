@@ -6,6 +6,8 @@ import 'vitepress-theme-demoblock/theme/styles/index.css'
 import DemoBlock from 'vitepress-theme-demoblock/components/DemoBlock.vue'
 import Demo from 'vitepress-theme-demoblock/components/Demo.vue'
 
+import '../../../styles/icon'
+
 export default {
   ...Theme,
   enhanceApp({ app }) {
