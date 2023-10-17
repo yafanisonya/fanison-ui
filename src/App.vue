@@ -53,15 +53,14 @@
     <FButton type="primary" round loading>Loading</FButton>
   </div> -->
 
-  <h1>Pagination</h1>
-
+  <!-- <h1>Pagination</h1>
   <FPagination :total="1" :hide-on-single-page="true" />
   <FPagination :total="11" />
   <FPagination :total="50" :current-page="2" />
   <FPagination :total="80" :current-page="4" />
-  <FPagination :total="90" :current-page="5" />
+  <FPagination :total="90" :current-page="5" /> -->
 
-  <h1>Icon</h1>
+  <!-- <h1>Icon</h1>
   <FIcon name="plus"></FIcon>
   <FIcon name="https://vitejs.dev/logo.svg" size="30px"></FIcon>
 
@@ -72,8 +71,20 @@
   <FIcon component="search" color="green" :size="20"></FIcon>
   <FIcon component="plus" color="red" :size="40"></FIcon>
   <FIcon component="minus" color="black" :size="60"></FIcon>
-  <ArrowDownIcon color="yellow" :size="40"></ArrowDownIcon>
+  <ArrowDownIcon color="yellow" :size="40"></ArrowDownIcon> -->
+
+  <h1>Tab</h1>
+  <FTabs v-model="activeTab" closable addable>
+    <FTab name="1" title="Tab1">Tab 1 Content</FTab>
+    <FTab name="2" title="Tab2">Tab 2 Content</FTab>
+    <FTab name="3" title="Tab3">Tab 3 Content</FTab>
+  </FTabs>
 </template>
+
+<script setup langt="ts">
+import { ref } from 'vue'
+const activeTab = ref('1')
+</script>
 
 <style scoped>
 .mb-10 {

@@ -6,6 +6,8 @@ import App from './App.vue'
 import Button from './button'
 import Pagination from './pagination'
 import Icon from './icon'
+import Tab from './tab/'
+import Tabs from './tab'
 import ArrowDownIcon from './icon/arrow-down'
 
 createApp(App)
@@ -13,4 +15,6 @@ createApp(App)
   .use(Pagination)
   .use(Icon)
   .use(ArrowDownIcon)
+  .use(Tab)
+  .use(Tabs)
   .mount('#app')
