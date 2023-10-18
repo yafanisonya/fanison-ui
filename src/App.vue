@@ -79,15 +79,94 @@
     <FTab name="2" title="Tab2">Tab 2 Content</FTab>
     <FTab name="3" title="Tab3">Tab 3 Content</FTab>
   </FTabs>
+
+  <h1>Dialog</h1>
+  <FButton @click="dialogVisible = true">click to open the Dialog</FButton>
+  <FDialog v-model="dialogVisible" title="Tips">
+    <span>This is a message</span>
+    <template #footer>
+      <span class="dialog-footer">
+        <FButton @click="dialogVisible = false">Cancel</FButton>
+        <FButton type="primary" @click="dialogVisible = false">
+          Confirm
+        </FButton>
+      </span>
+    </template>
+  </FDialog>
+  <!-- <FDialog
+    v-model="dialogVisible"
+    title="Dialog Title Center"
+    :center="true"
+    :align-center="true"
+    :show-close="false"
+  >
+    <p>Dialog Content</p>
+  </FDialog> -->
+
+  <!-- <FDialog v-model="dialogVisible">
+    <template #header="{ close }">
+      <div class="my-header">
+        <h4>This is a custom header!</h4>
+        <FButton type="danger" @click="close"> Close </FButton>
+      </div>
+    </template>
+    This is dialog content.
+  </FDialog> -->
+
+  <!-- <FDialog v-model="dialogVisible" width="30%" title="Shipping address">
+    <table style="border-collapse: separate; border-spacing: 0px 10px">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width: 100px">2016-05-02</td>
+          <td style="width: 100px">John Smith</td>
+          <td style="width: 300px">
+            No.1518, Jinshajiang Road, Putuo District
+          </td>
+        </tr>
+        <tr>
+          <td>2016-05-04</td>
+          <td>John Smith</td>
+          <td>No.1518, Jinshajiang Road, Putuo District</td>
+        </tr>
+        <tr>
+          <td>2016-05-01</td>
+          <td>John Smith</td>
+          <td>No.1518, Jinshajiang Road, Putuo District</td>
+        </tr>
+        <tr>
+          <td>2016-05-03</td>
+          <td>John Smith</td>
+          <td>No.1518, Jinshajiang Road, Putuo District</td>
+        </tr>
+      </tbody>
+    </table>
+  </FDialog> -->
 </template>
 
 <script setup langt="ts">
 import { ref } from 'vue'
 const activeTab = ref('1')
+const dialogVisible = ref(false)
 </script>
 
 <style scoped>
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.my-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 16px;
+  word-break: break-all;
 }
 </style>
