@@ -73,14 +73,14 @@
   <FIcon component="minus" color="black" :size="60"></FIcon>
   <ArrowDownIcon color="yellow" :size="40"></ArrowDownIcon> -->
 
-  <h1>Tab</h1>
+  <!-- <h1>Tab</h1>
   <FTabs v-model="activeTab" closable addable>
     <FTab name="1" title="Tab1">Tab 1 Content</FTab>
     <FTab name="2" title="Tab2">Tab 2 Content</FTab>
     <FTab name="3" title="Tab3">Tab 3 Content</FTab>
-  </FTabs>
+  </FTabs> -->
 
-  <h1>Dialog</h1>
+  <!-- <h1>Dialog</h1>
   <FButton @click="dialogVisible = true">click to open the Dialog</FButton>
   <FDialog v-model="dialogVisible" title="Tips">
     <span>This is a message</span>
@@ -92,7 +92,7 @@
         </FButton>
       </span>
     </template>
-  </FDialog>
+  </FDialog> -->
   <!-- <FDialog
     v-model="dialogVisible"
     title="Dialog Title Center"
@@ -148,17 +148,42 @@
       </tbody>
     </table>
   </FDialog> -->
+
+  <div class="width500">
+    <FInput v-model="inputValue" placeholder="Please input"></FInput>
+    <FInput v-model="inputValue" placeholder="Disabled input" disabled></FInput>
+    <FInput
+      v-model="inputValue"
+      placeholder="clearable input"
+      clearable
+    ></FInput>
+    <FInput
+      v-model="inputValue"
+      placeholder="password input "
+      type="password"
+    ></FInput>
+    <FInput
+      v-model="inputValue"
+      placeholder="maxlength 20 input"
+      maxlength="20"
+    ></FInput>
+  </div>
 </template>
 
 <script setup langt="ts">
 import { ref } from 'vue'
 const activeTab = ref('1')
 const dialogVisible = ref(false)
+const inputValue = ref('')
 </script>
 
 <style scoped>
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.width500 {
+  width: 500px;
 }
 
 .my-header {

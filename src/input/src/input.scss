@@ -1,0 +1,64 @@
+.s-input {
+  position: relative;
+  font-size: 14px;
+  display: inline-flex;
+  width: 100%;
+  line-height: 32px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.s-input.is-disabled .s-input__wrapper {
+    background-color: #f5f7fa;
+    box-shadow: 0 0 0 1px #e4e7ed inset;
+}
+
+.s-input.is-disabled .s-input__inner {
+    color: #a8abb2;
+    cursor: not-allowed;
+}
+
+.s-input.is-disabled .s-input__inner::placeholder {
+    color: #a8abb2;
+}
+
+.s-input__wrapper{
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 11px;
+  background-color: #ffffff;
+  background-image: none;
+  border-radius: 4px;
+  cursor: text;
+  transform: translateZ(0);
+  box-shadow: 0 0 0 1px #dcdfe6 inset;
+}
+
+.s-input__wrapper:hover {
+  box-shadow: 0 0 0 1px #c0c4cc inset;
+}
+
+.s-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px #409eff inset;
+}
+
+.s-input__inner {
+  width: 100%;
+  flex-grow: 1;
+  -webkit-appearance: none;
+  color: #606266;
+  font-size: inherit;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+}
+
+.s-input__clear{
+  cursor: pointer;
+}

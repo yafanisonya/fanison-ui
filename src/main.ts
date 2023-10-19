@@ -10,6 +10,7 @@ import Tab from './tab/'
 import Tabs from './tab'
 import ArrowDownIcon from './icon/arrow-down'
 import Dialog from './dialog'
+import Input from './input'
 
 createApp(App)
   .use(Button)
@@ -19,4 +20,5 @@ createApp(App)
   .use(Tab)
   .use(Tabs)
   .use(Dialog)
+  .use(Input)
   .mount('#app')
