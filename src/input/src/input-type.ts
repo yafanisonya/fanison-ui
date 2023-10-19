@@ -19,7 +19,7 @@ export const inputProps = {
   },
   maxlength: {
     type: String,
-    default: '100'
+    default: ''
   },
   clearable: {
     type: Boolean,

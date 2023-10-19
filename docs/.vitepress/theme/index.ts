@@ -1,19 +1,18 @@
-import Theme from 'vitepress/dist/client/theme-default'
-import HelloWorld from '../../../src/components/HelloWorld.vue'
-import Test from '../../../src/components/Test'
-
+import DefaultTheme from 'vitepress/theme'
 import 'vitepress-theme-demoblock/theme/styles/index.css'
+import './demoblock.scss'
+
 import DemoBlock from 'vitepress-theme-demoblock/components/DemoBlock.vue'
 import Demo from 'vitepress-theme-demoblock/components/Demo.vue'
 
-import '../../../styles/icon'
+import FanisonUI from '../../../scripts/entry'
+import '../../../src/style/index.scss'
 
 export default {
-  ...Theme,
+  ...DefaultTheme,
   enhanceApp({ app }) {
-    app.component('HelloWorld', HelloWorld)
-    app.component('Test', Test)
-    app.component('DemoBlock', DemoBlock)
+    app.use(FanisonUI)
     app.component('Demo', Demo)
+    app.component('DemoBlock', DemoBlock)
   }
 }

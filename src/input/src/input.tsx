@@ -1,4 +1,4 @@
-import { defineComponent, toRefs } from 'vue'
+import { defineComponent } from 'vue'
 import { InputProps, inputProps } from './input-type'
 import './input.scss'
 
@@ -7,8 +7,6 @@ export default defineComponent({
   props: inputProps,
   emits: ['update:modelValue'],
   setup(props: InputProps, { emit }) {
-    const { clearable } = toRefs(props)
-
     const handleChange = (e: any) => {
       emit('update:modelValue', e.target.value)
     }
@@ -26,11 +24,9 @@ export default defineComponent({
           />
 
           {/* 增加清空按钮 */}
-          {clearable.value && props.modelValue && (
+          {props.clearable && props.modelValue && (
             <svg
-              onClick={() => {
-                emit('update:modelValue', '')
-              }}
+              onClick={handleChange}
               class="s-input__clear"
               viewBox="0 0 1024 1024"
               width="16"

@@ -18,6 +18,7 @@ export default defineComponent({
         : true
     })
     const { hideOnSinglePage } = toRefs(props)
+    const hideStatus = hideOnSinglePage.value
     onMounted(() => {
       watch(
         () => props.pageSize,
@@ -27,21 +28,23 @@ export default defineComponent({
       )
     })
     return () => {
-      const hideStatus = hideOnSinglePage.value
+      const left = ref('<')
+      const right = ref('>')
+
       return hideStatus && pager.value && pager.value.totalPage === 1 ? null : (
         <div class="s-pagination">
           <button
             onClick={() => pager.value.prevPage()}
             disabled={disablePrev.value}
           >
-            上一页
+            {left.value}
           </button>
           <FPager ref={pager} {...props}></FPager>
           <button
             onClick={() => pager.value.nextPage()}
             disabled={disableNext.value}
           >
-            下一页
+            {right.value}
           </button>
         </div>
       )
