@@ -8,6 +8,9 @@ import Demo from 'vitepress-theme-demoblock/components/Demo.vue'
 import FanisonUI from '../../../scripts/entry'
 import '../../../src/style/index.scss'
 
+import '../../../styles/icon/iconfont.css'
+import '../../../styles/icon/iconfont.js'
+
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {

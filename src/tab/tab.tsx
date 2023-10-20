@@ -24,7 +24,7 @@ export default defineComponent({
     return () => (
       <>
         {props.name === activeTab.value && (
-          <div class="s-tab">{slots.default?.()}</div>
+          <div class="s-tabs__content">{slots.default?.()}</div>
         )}
       </>
     )

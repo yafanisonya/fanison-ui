@@ -185,4 +185,8 @@ export default defineComponent({
 .s-input:nth-child(1){
   margin-bottom:16px;
 }
+
+td, th {
+   border: none!important;
+}
 </style>

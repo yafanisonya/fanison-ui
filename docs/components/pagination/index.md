@@ -9,9 +9,9 @@
 ```vue
 <template>
   <div>
-    <FPagination :total="50" />
+    <f-pagination :total="50" />
   <div>
-    <FPagination :total="100" :page-size="50" />
+    <f-pagination :total="100" :page-size="50" />
   </div>
 </template>
 ```
@@ -26,16 +26,16 @@
 <template>
   <div>
     <div>显示右更多按钮</div>
-    <FPagination :total="80" :current-page="4" />
+    <f-pagination :total="80" :current-page="4" />
   </div>
   <div>
     <div>显示左更多按钮</div>
-    <FPagination :total="80" :current-page="5" />
+    <f-pagination :total="80" :current-page="5" />
   </div>
 
   <div>
     <div>显示左、右更多按钮</div>
-    <FPagination :total="90" :current-page="5" />
+    <f-pagination :total="90" :current-page="5" />
   </div>
 </template>
 ```
@@ -69,6 +69,61 @@ export default defineComponent({
 
 :::
 
+## Pagination Attributes
+
+<table style="border-collapse: separate; border-spacing: 0px 10px; width:100%">
+  <thead>
+    <tr align="left">
+      <th style="width: 400px;">属性名</th>
+      <th style="width: 270px;">说明</th>
+      <th style="width: 80px">类型</th>
+      <th>默认值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>total</td>
+      <td>总条目数</td>
+      <td>
+        <code>number</code>
+      </td>
+      <td>
+       <code>—</code>
+      </td>
+    </tr>
+    <tr>
+      <td>current-page / v-model:current-page</td>
+      <td>当前页数</td>
+      <td>
+        <code>number</code>
+      </td>
+      <td>
+       <code>1</code>
+      </td>
+    </tr>
+    <tr>
+      <td>page-size / v-model:page-size</td>
+      <td>每页显示条目个数</td>
+      <td>
+        <code>number</code>
+      </td>
+      <td>
+       <code>10</code>
+      </td>
+    </tr>
+    <tr>
+      <td>hide-on-single-page</td>
+      <td>只有一页时是否隐藏</td>
+      <td>
+        <code>boolean</code>
+      </td>
+      <td>
+        <code>false</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <style>
 
 .vp-doc ul, .vp-doc ol{
@@ -77,6 +132,7 @@ export default defineComponent({
 
 .vp-doc li + li{
   margin-top: 0 !important;
+  list-style-type:none
 }
 
 div{
@@ -85,5 +141,9 @@ div{
   &.hide-desc{
     margin-top:20px;
   }
+}
+
+td, th {
+   border: none!important;
 }
 </style>

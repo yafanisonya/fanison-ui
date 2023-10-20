@@ -14,9 +14,9 @@ export default defineComponent({
     const alignCenterStyle = alignCenter.value
       ? { marginTop: 0, top: '50%', transform: 'translateY(-50%)' }
       : null
-    const centerStyle = center.value
-      ? { textAlign: 'center' }
-      : { textAlign: 'left' }
+    const centerStyle = center.value ? { textAlign: 'center' } : null
+
+    const footerVisible = slots.footer && slots.footer()
 
     return () => (
       <BaseDialog class="s-modal" modelValue={modelValue.value}>
@@ -50,7 +50,12 @@ export default defineComponent({
             </div>
           )}
           <div class="s-modal__body">{slots.default?.()}</div>
-          <div class="s-modal__footer">{slots.footer?.()}</div>
+
+          {footerVisible && (
+            <div class="s-modal__footer" style={{ ...centerStyle }}>
+              {slots.footer?.()}
+            </div>
+          )}
         </div>
       </BaseDialog>
     )
