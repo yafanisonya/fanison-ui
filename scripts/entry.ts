@@ -5,8 +5,26 @@ import IconPlugin, { Icon } from '../src/icon'
 import TabPlugin, { Tab, Tabs } from '../src/tab'
 import DialogPlugin, { Dialog } from '../src/dialog'
 import InputPlugin, { Input } from '../src/input'
+import ContainerPlugin, { Container } from '../src/container'
+import HeaderPlugin, { Header } from '../src/header'
+import AsidePlugin, { Aside } from '../src/aside'
+import MainPlugin, { Main } from '../src/main/index'
+import FooterPlugin, { Footer } from '../src/footer'
 
-export { Button, Pagination, Icon, Tab, Tabs, Dialog, Input }
+export {
+  Button,
+  Pagination,
+  Icon,
+  Tab,
+  Tabs,
+  Dialog,
+  Input,
+  Container,
+  Header,
+  Aside,
+  Main,
+  Footer
+}
 
 const installs = [
   ButtonPlugin,
@@ -14,7 +32,12 @@ const installs = [
   IconPlugin,
   TabPlugin,
   DialogPlugin,
-  InputPlugin
+  InputPlugin,
+  ContainerPlugin,
+  HeaderPlugin,
+  AsidePlugin,
+  MainPlugin,
+  FooterPlugin
 ]
 
 export default {
