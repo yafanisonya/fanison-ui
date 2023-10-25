@@ -26,6 +26,10 @@ const sidebar = [
     text: 'Form 表单组件',
     items: [
       {
+        text: 'Checkbox 多选框',
+        link: '/components/checkbox/'
+      },
+      {
         text: 'Input 输入框',
         link: '/components/input/'
       }

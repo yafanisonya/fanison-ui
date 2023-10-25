@@ -16,6 +16,8 @@ import Header from './header'
 import Aside from './aside'
 import Main from './main/index.js'
 import Footer from './footer'
+import Checkbox from './checkbox'
+import CheckboxGroup from './checkbox-group'
 
 createApp(App)
   .use(Button)
@@ -31,4 +33,6 @@ createApp(App)
   .use(Aside)
   .use(Main)
   .use(Footer)
+  .use(Checkbox)
+  .use(CheckboxGroup)
   .mount('#app')

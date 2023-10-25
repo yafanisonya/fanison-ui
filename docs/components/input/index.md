@@ -66,7 +66,11 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FInput v-model="inputValue" placeholder="Clearable input" clearable></FInput>
+  <f-input
+    v-model="inputValue"
+    placeholder="Clearable input"
+    clearable
+  ></f-input>
 </template>
 
 <script>

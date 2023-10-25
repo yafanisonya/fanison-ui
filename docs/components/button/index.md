@@ -68,15 +68,15 @@
 ```vue
 <template>
   <div class="mb-10">
-    <FButton size="large">Large</FButton>
-    <FButton size="default">Default</FButton>
-    <FButton size="small">Small</FButton>
+    <f-button size="large">Large</f-button>
+    <f-button size="default">Default</f-button>
+    <f-button size="small">Small</f-button>
   </div>
 
   <div class="mb-10">
-    <FButton size="large" round>Large</FButton>
-    <FButton size="default" round>Default</FButton>
-    <FButton size="small" round>Small</FButton>
+    <f-button size="large" round>Large</f-button>
+    <f-button size="default" round>Default</f-button>
+    <f-button size="small" round>Small</f-button>
   </div>
 </template>
 ```
@@ -92,8 +92,8 @@
 ```vue
 <template>
   <div>
-    <FButton type="primary" loading>Loading</FButton>
-    <FButton type="primary" round loading>Loading</FButton>
+    <f-button type="primary" loading>Loading</f-button>
+    <f-button type="primary" round loading>Loading</f-button>
   </div>
 </template>
 ```

@@ -124,7 +124,7 @@ export default defineComponent({
   </tbody>
 </table>
 
-<style>
+<style scoped>
 
 .vp-doc ul, .vp-doc ol{
   padding:0 6px !important;

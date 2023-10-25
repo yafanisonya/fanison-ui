@@ -10,6 +10,8 @@ import HeaderPlugin, { Header } from '../src/header'
 import AsidePlugin, { Aside } from '../src/aside'
 import MainPlugin, { Main } from '../src/main/index'
 import FooterPlugin, { Footer } from '../src/footer'
+import CheckBoxPlugin, { Checkbox } from '../src/checkbox/'
+import CheckBoxGroupPlugin, { CheckboxGroup } from '../src/checkbox-group'
 
 export {
   Button,
@@ -23,7 +25,9 @@ export {
   Header,
   Aside,
   Main,
-  Footer
+  Footer,
+  Checkbox,
+  CheckboxGroup
 }
 
 const installs = [
@@ -37,7 +41,9 @@ const installs = [
   HeaderPlugin,
   AsidePlugin,
   MainPlugin,
-  FooterPlugin
+  FooterPlugin,
+  CheckBoxPlugin,
+  CheckBoxGroupPlugin
 ]
 
 export default {
