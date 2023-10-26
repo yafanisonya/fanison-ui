@@ -77,6 +77,8 @@ export default defineComponent({
 
 ## 多选框组
 
+`checkbox-group`元素能把多个 `checkbox` 管理为一组，只需要在 Group 中使用 `v-model` 绑定 `Array` 类型的变量即可。
+
 :::demo
 
 ```vue

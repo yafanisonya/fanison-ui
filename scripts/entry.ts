@@ -12,6 +12,8 @@ import MainPlugin, { Main } from '../src/main/index'
 import FooterPlugin, { Footer } from '../src/footer'
 import CheckBoxPlugin, { Checkbox } from '../src/checkbox/'
 import CheckBoxGroupPlugin, { CheckboxGroup } from '../src/checkbox-group'
+import RadioPlugin, { Radio } from '../src/radio'
+import RadioGroupPlugin, { RadioGroup } from '../src/radio-group'
 
 export {
   Button,
@@ -27,7 +29,9 @@ export {
   Main,
   Footer,
   Checkbox,
-  CheckboxGroup
+  CheckboxGroup,
+  Radio,
+  RadioGroup
 }
 
 const installs = [
@@ -43,7 +47,9 @@ const installs = [
   MainPlugin,
   FooterPlugin,
   CheckBoxPlugin,
-  CheckBoxGroupPlugin
+  CheckBoxGroupPlugin,
+  RadioPlugin,
+  RadioGroupPlugin
 ]
 
 export default {

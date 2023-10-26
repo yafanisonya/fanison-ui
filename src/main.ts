@@ -18,6 +18,8 @@ import Main from './main/index.js'
 import Footer from './footer'
 import Checkbox from './checkbox'
 import CheckboxGroup from './checkbox-group'
+import Radio from './radio'
+import RadioGroup from './radio-group'
 
 createApp(App)
   .use(Button)
@@ -35,4 +37,6 @@ createApp(App)
   .use(Footer)
   .use(Checkbox)
   .use(CheckboxGroup)
+  .use(Radio)
+  .use(RadioGroup)
   .mount('#app')

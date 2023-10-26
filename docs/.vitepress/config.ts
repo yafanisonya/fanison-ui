@@ -30,6 +30,10 @@ const sidebar = [
         link: '/components/checkbox/'
       },
       {
+        text: 'Radio 单选框',
+        link: '/components/radio/'
+      },
+      {
         text: 'Input 输入框',
         link: '/components/input/'
       }

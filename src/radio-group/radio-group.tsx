@@ -1,24 +1,24 @@
 import { defineComponent, provide, toRefs } from 'vue'
-import { checkboxGroupProps, CheckboxGroupProps } from './checkbox-group-type'
-import './checkbox-group.scss'
+
+import { radioGroupProps, RadioGroupProps } from './radio-group-type'
+import './radio-group.scss'
 
 export default defineComponent({
-  name: 'FCheckboxGroup',
-  props: checkboxGroupProps,
+  name: 'FRadioGroup',
+  props: radioGroupProps,
   emits: ['update:modelValue'],
-  setup(props: CheckboxGroupProps, { slots, emit }) {
+  setup(props: RadioGroupProps, { slots, emit }) {
     const { modelValue, disabled, size } = toRefs(props)
 
     provide('group-size', size)
     provide('group-disabled', disabled)
     provide('group-value', modelValue)
 
-    const updateModelValue = (value: string[]) => {
+    const updateModelValue = (value: string) => {
       emit('update:modelValue', value)
-      modelValue.value = value
     }
     provide('updateGroupValue', updateModelValue)
 
-    return () => <div class="s-checkbox-group">{slots.default?.()}</div>
+    return () => <div class="s-radio-group">{slots.default?.()}</div>
   }
 })

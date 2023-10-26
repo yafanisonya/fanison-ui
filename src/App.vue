@@ -13,59 +13,63 @@
   <FIcon component="minus" color="black" :size="60"></FIcon>
   <ArrowDownIcon color="yellow" :size="40"></ArrowDownIcon> -->
 
-  <!-- <div>
-    <f-checkbox v-model="checked1" label="Option 1" size="large" />
-    <f-checkbox v-model="checked2" label="Option 2" size="large" />
+  <div class="my-2 flex items-center text-sm">
+    <f-radio-group v-model="radio1" class="ml-4">
+      <f-radio label="1" size="large">Option 1</f-radio>
+      <f-radio label="2" size="large">Option 2</f-radio>
+    </f-radio-group>
   </div>
-  <div>
-    <f-checkbox v-model="checked3" label="Option 1" />
-    <f-checkbox v-model="checked4" label="Option 2" />
-  </div>
-  <div>
-    <f-checkbox v-model="checked5" label="Option 1" size="small" />
-    <f-checkbox v-model="checked6" label="Option 2" size="small" />
-  </div>
-  <div>
-    <f-checkbox v-model="checked5" label="Option 1" size="small" disabled />
-    <f-checkbox v-model="checked6" label="Option 2" size="small" disabled />
+  <div class="my-2 flex items-center text-sm">
+    <f-radio-group v-model="radio2" class="ml-4">
+      <f-radio label="1">Option 1</f-radio>
+      <f-radio label="2">Option 2</f-radio>
+    </f-radio-group>
   </div>
 
   <div>
-    <f-checkbox v-model="checked1" label="Option1" size="large" border />
-    <f-checkbox v-model="checked2" label="Option2" size="large" border />
+    <f-radio-group v-model="radio1">
+      <f-radio label="1" size="large" border>Option A</f-radio>
+      <f-radio label="2" size="large" border>Option B</f-radio>
+    </f-radio-group>
   </div>
-  <div>
-    <f-checkbox v-model="checked3" label="Option1" border />
-    <f-checkbox v-model="checked4" label="Option2" border />
+  <div style="margin-top: 20px">
+    <f-radio-group v-model="radio2" size="small">
+      <f-radio label="1" border>Option A</f-radio>
+      <f-radio label="2" border>Option B</f-radio>
+    </f-radio-group>
   </div>
-  <div>
-    <f-checkbox v-model="checked3" label="Option1" border disabled />
-    <f-checkbox v-model="checked4" label="Option2" border disabled />
-  </div> -->
+  <div style="margin-top: 20px">
+    <f-radio-group v-model="radio2" size="small" disabled>
+      <f-radio label="1" border>Option A</f-radio>
+      <f-radio label="2" border>Option B</f-radio>
+    </f-radio-group>
+  </div>
 
-  <f-checkbox-group v-model="checkList" size="large">
-    <f-checkbox label="Option A" />
-    <f-checkbox label="Option B" />
-    <f-checkbox label="Option C" />
-    <f-checkbox label="disabled" disabled />
-    <f-checkbox label="selected and disabled" disabled />
-  </f-checkbox-group>
-
-  <f-checkbox-group v-model="checkList" size="small">
-    <f-checkbox label="Option A" />
-    <f-checkbox label="Option B" />
-    <f-checkbox label="Option C" />
-    <f-checkbox label="disabled" disabled />
-    <f-checkbox label="selected and disabled" disabled />
-  </f-checkbox-group>
+  <f-radio v-model="radio" label="disabled" size="small">Option A</f-radio>
+  <f-radio v-model="radio" label="selected and disabled" size="small"
+    >Option B</f-radio
+  >
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
-const checkList = ref(['selected and disabled', 'Option A'])
-const checked1 = ref(true)
-const checked2 = ref(false)
-const checked3 = ref(false)
-const checked4 = ref(false)
-const checked5 = ref(true)
-const checked6 = ref(false)
+const radio = ref('selected and disabled')
+const radio1 = ref('1')
+const radio2 = ref('1')
 </script>
+
+<style>
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+</style>
