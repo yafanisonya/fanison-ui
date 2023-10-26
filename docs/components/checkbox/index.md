@@ -47,6 +47,8 @@ export default defineComponent({
 
 ## 禁用状态
 
+设置 `disabled` 属性即可。
+
 :::demo
 
 ```vue
@@ -119,6 +121,8 @@ export default defineComponent({
 :::
 
 ## 带有边框
+
+设置 `border` 属性可以渲染为带有边框的多选框。
 
 :::demo
 

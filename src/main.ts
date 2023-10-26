@@ -20,6 +20,7 @@ import Checkbox from './checkbox'
 import CheckboxGroup from './checkbox-group'
 import Radio from './radio'
 import RadioGroup from './radio-group'
+import Switch from './switch'
 
 createApp(App)
   .use(Button)
@@ -39,4 +40,5 @@ createApp(App)
   .use(CheckboxGroup)
   .use(Radio)
   .use(RadioGroup)
+  .use(Switch)
   .mount('#app')
