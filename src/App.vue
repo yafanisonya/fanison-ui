@@ -12,32 +12,9 @@
   <FIcon component="plus" color="red" :size="40"></FIcon>
   <FIcon component="minus" color="black" :size="60"></FIcon>
   <ArrowDownIcon color="yellow" :size="40"></ArrowDownIcon> -->
-  <f-switch v-model="value1" />
-  <f-switch v-model="value1" active-text="Open" inactive-text="Close" />
-
-  <f-switch
-    v-model="value"
-    size="large"
-    active-text="Open"
-    inactive-text="Close"
-  />
-  <br />
-  <f-switch v-model="value" active-text="Open" inactive-text="Close" />
-  <br />
-  <f-switch
-    v-model="value"
-    size="small"
-    active-text="Open"
-    inactive-text="Close"
-  />
-  <f-switch v-model="value" disabled />
-  <f-switch v-model="value" loading />
-  <f-switch v-model="value1" loading />
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
-const value = ref(true)
-const value1 = ref(false)
 </script>
 
 <style></style>

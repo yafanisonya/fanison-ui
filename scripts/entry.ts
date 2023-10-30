@@ -15,6 +15,7 @@ import CheckBoxGroupPlugin, { CheckboxGroup } from '../src/checkbox-group'
 import RadioPlugin, { Radio } from '../src/radio'
 import RadioGroupPlugin, { RadioGroup } from '../src/radio-group'
 import SwitchPlugin, { Switch } from '../src/switch'
+import AlertPlugin, { Alert } from '../src/alert'
 
 export {
   Button,
@@ -33,7 +34,8 @@ export {
   CheckboxGroup,
   Radio,
   RadioGroup,
-  Switch
+  Switch,
+  Alert
 }
 
 const installs = [
@@ -52,7 +54,8 @@ const installs = [
   CheckBoxGroupPlugin,
   RadioPlugin,
   RadioGroupPlugin,
-  SwitchPlugin
+  SwitchPlugin,
+  AlertPlugin
 ]
 
 export default {

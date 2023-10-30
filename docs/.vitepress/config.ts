@@ -56,6 +56,10 @@ const sidebar = [
     text: 'Navigation 导航',
     items: [
       {
+        text: 'Alert 提示',
+        link: '/components/alert/'
+      },
+      {
         text: 'Tabs 标签页',
         link: '/components/tabs/'
       }
