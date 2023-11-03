@@ -16,6 +16,7 @@ import RadioPlugin, { Radio } from '../src/radio'
 import RadioGroupPlugin, { RadioGroup } from '../src/radio-group'
 import SwitchPlugin, { Switch } from '../src/switch'
 import AlertPlugin, { Alert } from '../src/alert'
+import BreadcrumbPlugin, { Breadcrumb, BreadcrumbItem } from '../src/breadcrumb'
 
 export {
   Button,
@@ -35,7 +36,9 @@ export {
   Radio,
   RadioGroup,
   Switch,
-  Alert
+  Alert,
+  Breadcrumb,
+  BreadcrumbItem
 }
 
 const installs = [
@@ -55,7 +58,8 @@ const installs = [
   RadioPlugin,
   RadioGroupPlugin,
   SwitchPlugin,
-  AlertPlugin
+  AlertPlugin,
+  BreadcrumbPlugin
 ]
 
 export default {

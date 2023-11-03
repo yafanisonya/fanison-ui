@@ -1,0 +1,59 @@
+.s-breadcrumb {
+    font-size: 14px;
+    line-height: 1
+}
+
+.s-breadcrumb:before,.s-breadcrumb:after {
+    display: table;
+    content: ""
+}
+
+.s-breadcrumb:after {
+    clear: both
+}
+
+.s-breadcrumb__separator {
+    margin: 0 9px;
+    font-weight: 700;
+    color: #a8abb2
+}
+
+.s-breadcrumb__separator.s-icon {
+    margin: 0 6px;
+    font-weight: 400
+}
+
+.s-breadcrumb__separator.s-icon svg {
+    vertical-align: middle
+}
+
+.s-breadcrumb__item {
+    float: left;
+    display: inline-flex;
+    align-items: center
+}
+
+.s-breadcrumb__inner {
+    color: #606266
+}
+
+.s-breadcrumb__inner.is-link,.s-breadcrumb__inner a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #303133
+}
+
+.s-breadcrumb__inner.is-link:hover,.s-breadcrumb__inner a:hover {
+    color: #409eff;
+    cursor: pointer
+}
+
+.s-breadcrumb__item:last-child .s-breadcrumb__inner,.s-breadcrumb__item:last-child .s-breadcrumb__inner:hover,.s-breadcrumb__item:last-child .s-breadcrumb__inner a,.s-breadcrumb__item:last-child .s-breadcrumb__inner a:hover {
+    font-weight: 400;
+    color: #606266;
+    cursor: text
+}
+
+.s-breadcrumb__item:last-child .s-breadcrumb__separator {
+    display: none
+}

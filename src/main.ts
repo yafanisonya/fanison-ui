@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import router from './router'
 import './style/index.scss'
 import '../styles/icon/iconfont.css'
 import '../styles/icon/iconfont.js'
@@ -22,8 +23,11 @@ import Radio from './radio'
 import RadioGroup from './radio-group'
 import Switch from './switch'
 import Alert from './alert'
+import Breadcrumb from './breadcrumb'
+import BreadcrumbItem from './breadcrumb/'
 
 createApp(App)
+  .use(router)
   .use(Button)
   .use(Pagination)
   .use(Icon)
@@ -43,4 +47,6 @@ createApp(App)
   .use(RadioGroup)
   .use(Switch)
   .use(Alert)
+  .use(Breadcrumb)
+  .use(BreadcrumbItem)
   .mount('#app')

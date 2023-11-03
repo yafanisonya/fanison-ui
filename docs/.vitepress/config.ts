@@ -56,8 +56,8 @@ const sidebar = [
     text: 'Navigation 导航',
     items: [
       {
-        text: 'Alert 提示',
-        link: '/components/alert/'
+        text: 'Breadcrumb 面包屑',
+        link: '/components/breadcrumb/'
       },
       {
         text: 'Tabs 标签页',
@@ -68,6 +68,10 @@ const sidebar = [
   {
     text: 'Feedback 反馈组件',
     items: [
+      {
+        text: 'Alert 提示',
+        link: '/components/alert/'
+      },
       {
         text: 'Dialog 对话框',
         link: '/components/dialog/'
