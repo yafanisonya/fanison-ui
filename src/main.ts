@@ -25,6 +25,7 @@ import Switch from './switch'
 import Alert from './alert'
 import Breadcrumb from './breadcrumb'
 import BreadcrumbItem from './breadcrumb/'
+import Badge from './badge'
 
 createApp(App)
   .use(router)
@@ -49,4 +50,5 @@ createApp(App)
   .use(Alert)
   .use(Breadcrumb)
   .use(BreadcrumbItem)
+  .use(Badge)
   .mount('#app')

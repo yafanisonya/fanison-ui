@@ -47,6 +47,10 @@ const sidebar = [
     text: 'Data 数据展示',
     items: [
       {
+        text: 'Badge 徽章',
+        link: '/components/badge/'
+      },
+      {
         text: 'Pagination 分页',
         link: '/components/pagination/'
       }
