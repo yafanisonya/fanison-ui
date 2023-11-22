@@ -19,6 +19,7 @@ import AlertPlugin, { Alert } from '../src/alert'
 import BreadcrumbPlugin, { Breadcrumb, BreadcrumbItem } from '../src/breadcrumb'
 import BadgePlugin, { Badge } from '../src/badge'
 import CollapsePlugin, { Collapse, CollapseItem } from '../src/collapse'
+import CardPlugin, { Card } from '../src/card'
 
 export {
   Button,
@@ -43,7 +44,8 @@ export {
   BreadcrumbItem,
   Badge,
   Collapse,
-  CollapseItem
+  CollapseItem,
+  Card
 }
 
 const installs = [
@@ -66,7 +68,8 @@ const installs = [
   AlertPlugin,
   BreadcrumbPlugin,
   BadgePlugin,
-  CollapsePlugin
+  CollapsePlugin,
+  CardPlugin
 ]
 
 export default {

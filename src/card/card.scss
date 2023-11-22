@@ -1,0 +1,33 @@
+.s-card {
+    --s-card-border-color: #e4e7ed;
+    --s-card-border-radius: 4px;
+    --s-card-padding: 20px;
+    --s-card-bg-color: #ffffff;
+}
+
+.s-card {
+    border-radius: var(--s-card-border-radius);
+    border: 1px solid var(--s-card-border-color);
+    background-color: var(--s-card-bg-color);
+    overflow: hidden;
+    color: #303133;
+    transition: .3s;
+}
+
+.s-card.is-always-shadow {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .12);
+}
+
+.s-card.is-hover-shadow:hover,.s-card.is-hover-shadow:focus {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .12);
+}
+
+.s-card__header {
+    padding: calc(var(--s-card-padding) - 2px) var(--s-card-padding);
+    border-bottom: 1px solid var(--s-card-border-color);
+    box-sizing: border-box;
+}
+
+.s-card__body {
+    padding: var(--s-card-padding)
+}

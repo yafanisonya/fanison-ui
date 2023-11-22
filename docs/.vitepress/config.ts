@@ -51,6 +51,10 @@ const sidebar = [
         link: '/components/badge/'
       },
       {
+        text: 'Card 卡片',
+        link: '/components/card/'
+      },
+      {
         text: 'Collapse 折叠面板',
         link: '/components/collapse/'
       },

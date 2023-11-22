@@ -28,6 +28,7 @@ import BreadcrumbItem from './breadcrumb/'
 import Badge from './badge'
 import Collapse from './collapse'
 import CollapseItem from './collapse/'
+import Card from './card'
 
 createApp(App)
   .use(router)
@@ -55,4 +56,5 @@ createApp(App)
   .use(Badge)
   .use(Collapse)
   .use(CollapseItem)
+  .use(Card)
   .mount('#app')
