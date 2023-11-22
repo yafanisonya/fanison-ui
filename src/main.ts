@@ -26,6 +26,8 @@ import Alert from './alert'
 import Breadcrumb from './breadcrumb'
 import BreadcrumbItem from './breadcrumb/'
 import Badge from './badge'
+import Collapse from './collapse'
+import CollapseItem from './collapse/'
 
 createApp(App)
   .use(router)
@@ -51,4 +53,6 @@ createApp(App)
   .use(Breadcrumb)
   .use(BreadcrumbItem)
   .use(Badge)
+  .use(Collapse)
+  .use(CollapseItem)
   .mount('#app')

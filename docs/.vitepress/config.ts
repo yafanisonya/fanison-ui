@@ -51,6 +51,10 @@ const sidebar = [
         link: '/components/badge/'
       },
       {
+        text: 'Collapse 折叠面板',
+        link: '/components/collapse/'
+      },
+      {
         text: 'Pagination 分页',
         link: '/components/pagination/'
       }

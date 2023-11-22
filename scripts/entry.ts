@@ -18,6 +18,7 @@ import SwitchPlugin, { Switch } from '../src/switch'
 import AlertPlugin, { Alert } from '../src/alert'
 import BreadcrumbPlugin, { Breadcrumb, BreadcrumbItem } from '../src/breadcrumb'
 import BadgePlugin, { Badge } from '../src/badge'
+import CollapsePlugin, { Collapse, CollapseItem } from '../src/collapse'
 
 export {
   Button,
@@ -40,7 +41,9 @@ export {
   Alert,
   Breadcrumb,
   BreadcrumbItem,
-  Badge
+  Badge,
+  Collapse,
+  CollapseItem
 }
 
 const installs = [
@@ -62,7 +65,8 @@ const installs = [
   SwitchPlugin,
   AlertPlugin,
   BreadcrumbPlugin,
-  BadgePlugin
+  BadgePlugin,
+  CollapsePlugin
 ]
 
 export default {
