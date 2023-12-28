@@ -20,6 +20,8 @@ import BreadcrumbPlugin, { Breadcrumb, BreadcrumbItem } from '../src/breadcrumb'
 import BadgePlugin, { Badge } from '../src/badge'
 import CollapsePlugin, { Collapse, CollapseItem } from '../src/collapse'
 import CardPlugin, { Card } from '../src/card'
+import SelectPlugin, { Select } from '../src/select'
+import OptionPlugin, { Option } from '../src/select-option'
 
 export {
   Button,
@@ -45,7 +47,9 @@ export {
   Badge,
   Collapse,
   CollapseItem,
-  Card
+  Card,
+  Select,
+  Option
 }
 
 const installs = [
@@ -69,7 +73,9 @@ const installs = [
   BreadcrumbPlugin,
   BadgePlugin,
   CollapsePlugin,
-  CardPlugin
+  CardPlugin,
+  SelectPlugin,
+  OptionPlugin
 ]
 
 export default {

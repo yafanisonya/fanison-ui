@@ -29,6 +29,8 @@ import Badge from './badge'
 import Collapse from './collapse'
 import CollapseItem from './collapse/'
 import Card from './card'
+import Select from './select'
+import Option from './select-option'
 
 createApp(App)
   .use(router)
@@ -57,4 +59,6 @@ createApp(App)
   .use(Collapse)
   .use(CollapseItem)
   .use(Card)
+  .use(Select)
+  .use(Option)
   .mount('#app')
