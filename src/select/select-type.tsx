@@ -19,7 +19,7 @@ export const selectProps = {
   },
   placeholder: {
     type: String,
-    default: '请选择'
+    default: 'Select'
   },
   size: {
     type: String as PropType<'small' | 'default' | 'large'>,

@@ -1,13 +1,25 @@
 <template>
   <div>Demo Page</div>
-  <f-select v-model="value" placeholder="Select" disabled>
-    <f-option
+  <f-select v-model="value" placeholder="Select" clearable>
+    <!-- <f-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value"
       :disabled="item.disabled"
-    />
+    /> -->
+
+    <f-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value"
+    >
+      <span style="float: left">{{ item.label }}</span>
+      <span style="float: right; color: #909399; font-size: 13px">{{
+        item.value
+      }}</span>
+    </f-option>
   </f-select>
 </template>
 <script setup lang="ts">

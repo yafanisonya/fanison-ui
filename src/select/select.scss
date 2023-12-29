@@ -6,14 +6,14 @@
     --s-select-input-color: #a8abb2;
     --s-select-multiple-input-color: #606266;
     --s-select-input-focus-border-color: #409eff;
-    --s-select-input-font-size: 14px
+    --s-select-input-font-size: 14px;
 }
 
 .s-select {
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    line-height: 32px
+    line-height: 32px;
 }
 
 .s-select__popper.s-popper {
@@ -365,10 +365,11 @@
 }
 
 .s-select-dropdown__list {
-    list-style: none;
-    padding: 6px 0;
-    margin: 0;
-    box-sizing: border-box
+    list-style: none !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+
 }
 
 .s-select-dropdown__header {

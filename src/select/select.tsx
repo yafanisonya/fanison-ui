@@ -1,4 +1,4 @@
-import { defineComponent, ref, provide } from 'vue'
+import { defineComponent, ref, provide, watch, computed } from 'vue'
 import { selectProps, SelectProps } from './select-type'
 import './select.scss'
 
@@ -22,6 +22,7 @@ export default defineComponent({
     const updateModelValue = (value: string | number) => {
       emit('update:modelValue', value)
       optionsVisible.value = false
+      // console.log('shouldShowCloseCircle ====>', shouldShowCloseCircle.value)
     }
     provide('updateModelValue', updateModelValue)
 
@@ -29,6 +30,19 @@ export default defineComponent({
       if (props.disabled) return
       optionsVisible.value = !optionsVisible.value
     }
+
+    // 创建响应式变量
+    const showClearable = ref(false)
+    // 监听依赖项的变化
+    watch(
+      () => [props.modelValue, optionsVisible.value],
+      ([newModelValue, newOptionsVisible], [oldVal1, oldVal2]) => {
+        if (newModelValue && !newOptionsVisible) {
+          showClearable.value = true
+        }
+        console.log('showClearable', showClearable.value)
+      }
+    )
 
     return () => (
       <div class={['s-select', props.size ? `s-select--${props.size}` : '']}>
@@ -49,10 +63,15 @@ export default defineComponent({
                 value={props.modelValue}
                 disabled={props.disabled}
               />
-              <f-icon
-                name="arrowdown"
-                class={[optionsVisible.value ? 'is-reverse' : '']}
-              ></f-icon>
+              {!(props.modelValue && !optionsVisible.value) && (
+                <f-icon
+                  name="arrowdown"
+                  class={[optionsVisible.value ? 'is-reverse' : '']}
+                ></f-icon>
+              )}
+              {props.modelValue && !optionsVisible.value && (
+                <f-icon name="closecircle"></f-icon>
+              )}
             </div>
           </div>
         </div>

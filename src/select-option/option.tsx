@@ -6,7 +6,7 @@ export default defineComponent({
   name: 'FOption',
   props: optionProps,
   emits: ['update:modelValue'],
-  setup(props: OptionProps) {
+  setup(props: OptionProps, { slots }) {
     const updateModelValue = inject('updateModelValue', null) as unknown as (
       value: string | number | undefined
     ) => void
@@ -43,7 +43,7 @@ export default defineComponent({
         ]}
         onClick={() => handleSelectItem()}
       >
-        <span>{props.label}</span>
+        {slots.default?.() || <span>{props.label}</span>}
       </div>
     )
   }
